@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0; 
+}
+html {
+  font-size: 10px;
+  box-sizing: border-box; 
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+@media (max-width: 1140px) {
+  .container {
+    width: 95%; } }
+
+.header {
+  background-color: #dcdcdc; }
+
+  .header__title {
+    color: #60606e;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; }
+  .header__middle {
+    height: 200px;
+    background-color: #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    overflow: hidden; }
+    .header__middle-active {
+      height: 0px;
+      overflow: hidden;
+      transition: all 1s; }
+  .header__menu ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    padding: 20px 0; }
+    .header__menu ul li a {
+      color: #60606e;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;}
+      .header__menu ul li a:hover {
+        color: #4a826f; }
+    .header__menu ul li:first-child:after {
+      content: "/";
+      margin: 5px;
+      font-family: Montserrat;
+      font-size: 13px;
+      font-weight: 600; }
+.main__middle {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.main__todoBlock{
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    margin: 1%;
+}
+.todoBlock__text {
+  font-weight: bold;
+}
+.mainblock {
+  width: 30%;
+}
+button {
+  display: block;
+  margin: 8px auto;
+  border: none;
+  padding: 10px;
+  box-shadow: 0 0 2px 0px black;
+}
+
+#zatemnenie {
+  background: rgba(102, 102, 102, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 5;
+}
+#okno {
+  width: 560px;
+  height: auto;
+  text-align: center;
+  padding: 15px;
+  border: 3px solid #dcdcdc;
+  border-radius: 10px;
+  color: black;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background: #fff;
+  font-size: 15px;
+  z-index: 8;
+}
+/*#zatemnenie:target {display: block;}*/
+.close {
+  display: inline-block;
+  border: 1px solid #dcdcdc;
+  color: black;
+  padding: 0 12px;
+  margin: 10px;
+  text-decoration: none;
+  background: #f2f2f2;
+  font-size: 14px;
+  cursor:pointer;
+}
+select {
+  margin: 10px 0;
+}
